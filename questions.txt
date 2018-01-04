@@ -1,0 +1,48 @@
+Which city does not have an official Disneyland?
+Moscow true
+HongKong false
+LosAngeles false
+The World fastest animal can also be seen in Finnish forests. True or False? 
+True true
+False false
+No idea false
+How many squares are in normal Monopoly board?
+40 true
+60 false
+80 false
+How many time a heart beats a day? 
+200.000 false
+100.000 true
+50.000 false
+What animal first reached Earth orbits alive? 
+Dog true
+Human false
+Harambe false
+How many days can a flu virus live in bills? 
+2 false
+17 true
+28 false
+What is the color of the stars in the flag of the United States of America?
+Red false
+Blue false 
+White true
+Which actor does not appear in Saving Private Ryan movie? 
+Matt Damon false
+Tom Hanks false
+Raplh Fiennes true
+Which has the most vitamin C? 
+Apple false
+Strawberry false
+Paprika true
+In which Bond movie, the theme song was made by Adele? 
+Spectre false
+Skyfall true
+Casino Royal false
+What is the largest country by area that has only one time zone?
+Russia false
+China true
+Disneyland false
+Which is the most popular language in the world?
+Chinese true
+Spanish false
+English false

@@ -8,7 +8,7 @@ var userConnected = [];
 
 var currentUsername = null;
 var numOfInput = 0;
-var numOfQuestions, numOfPlayers;
+var numOfQuestions = 2, numOfPlayers = 2;
 var questions = [];
 var questIndex = 0;
 
@@ -178,54 +178,54 @@ http.listen(3000, function () {
 });
 
 //get input from the terminal
-console.log('Input number of Players: ');
-process.stdin.resume();
-process.stdin.setEncoding('utf8');
-
-
-process.stdin.on('data', function (text) {
-	numOfInput += 1;
-	// console.log ('Number of inputs: ',numOfInput);
-	// console.log('Inputted number of Questions:', text.toString().trim());
-	if (numOfInput === 1) {
-		if (isNaN(Number(text)) === false) {
-			numOfPlayers = Number(text);
-			if (numOfPlayers >= 2 && numOfPlayers <= 8) {
-				console.log('Input Number of Questions: ');
-			}
-			else {
-				numOfInput = 0;
-				console.log('Make sure Number of Players is between 2 and 8!');
-				console.log('Re-input number of Players: ');
-			}
-		}
-		else {
-			numOfInput = 0;
-			console.log('Wrong type! Please insert Number!');
-			console.log('Re-input number of Questions: ');
-		}
-	}
-	else if (numOfInput === 2) {
-		if (isNaN(Number(text)) === false) {
-			numOfQuestions = Number(text);
-			if (numOfQuestions >= 1 && numOfQuestions <= 10) {
-				console.log('Loading questions...');
-				// done();
-				loadQuest();
-			}
-			else {
-				numOfInput = 1;
-				console.log('Make sure Number of Questions is between 1 and 10!');
-				console.log('Re-input number of Questions: ');
-			}
-		}
-		else {
-			numOfInput = 1;
-			console.log('Wrong type! Please insert Number!');
-			console.log('Re-input number of Questions: ');
-		}
-	}
-});
+// console.log('Input number of Players: ');
+// process.stdin.resume();
+// process.stdin.setEncoding('utf8');
+//
+//
+// process.stdin.on('data', function (text) {
+// 	numOfInput += 1;
+// 	// console.log ('Number of inputs: ',numOfInput);
+// 	// console.log('Inputted number of Questions:', text.toString().trim());
+// 	if (numOfInput === 1) {
+// 		if (isNaN(Number(text)) === false) {
+// 			numOfPlayers = Number(text);
+// 			if (numOfPlayers >= 2 && numOfPlayers <= 8) {
+// 				console.log('Input Number of Questions: ');
+// 			}
+// 			else {
+// 				numOfInput = 0;
+// 				console.log('Make sure Number of Players is between 2 and 8!');
+// 				console.log('Re-input number of Players: ');
+// 			}
+// 		}
+// 		else {
+// 			numOfInput = 0;
+// 			console.log('Wrong type! Please insert Number!');
+// 			console.log('Re-input number of Questions: ');
+// 		}
+// 	}
+// 	else if (numOfInput === 2) {
+// 		if (isNaN(Number(text)) === false) {
+// 			numOfQuestions = Number(text);
+// 			if (numOfQuestions >= 1 && numOfQuestions <= 10) {
+// 				console.log('Loading questions...');
+// 				// done();
+// 				loadQuest();
+// 			}
+// 			else {
+// 				numOfInput = 1;
+// 				console.log('Make sure Number of Questions is between 1 and 10!');
+// 				console.log('Re-input number of Questions: ');
+// 			}
+// 		}
+// 		else {
+// 			numOfInput = 1;
+// 			console.log('Wrong type! Please insert Number!');
+// 			console.log('Re-input number of Questions: ');
+// 		}
+// 	}
+// });
 function done() {
 	console.log('Now that process.stdin is paused, there is nothing more to do.');
 	process.exit();
